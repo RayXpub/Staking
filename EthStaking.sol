@@ -24,6 +24,7 @@ contract Staking is Ownable {
     uint256 public queuedRewards = 0;
     uint256 public currentRewards = 0;
     uint256 private _totalStakedSupply = address(this).balance;
+
     mapping(address => uint256) private _balances;
     mapping(address => uint256) public userRewardPerTokenPaid;
     mapping(address => uint256) public rewards;
